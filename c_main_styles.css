@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    line-height: 1.375;
+    color:#32404e ;
+}
+#site-wrapper{
+    margin: 0 auto;
+}
+.grid-12{
+    width: 100%; 
+}
+.grid-parent{
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    position: relative;
+}
+.grid-10{
+    width: 80%;
+}
+.grid-8{
+    width: 60%;
+}
+.grid-6{
+    flex: 50%;
+    width: 40%;
+}
+.grid-4{
+    flex: 30%;
+    display: inline-block;     
+    /* zoom:1; */
+    text-rendering: auto;
+    word-spacing: normal;
+    vertical-align: top;
+}
+.grid-3{
+    flex: 1;
+}
+.layout-center{
+    justify-content: center;
+    text-align: center;
+}
+.vert-alignC{
+    vertical-align:middle;
+    align-content: center;
+}
+.v-h_center{
+    margin: auto;
+}
+
+a{
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+/*    color: #f1f1f1;*/
+}
+button{
+    outline: none;
+}
+ul{
+    list-style: none;
+}
+header,nav,main,section,article,div,footer{
+    display: block;
+    position: relative;
+}
+article#nav-fill nav>ul li{
+    display: inline-block;
+    margin: 0.8em;
+}
+nav>ul li{
+    display:block;
+    text-align: center;
+            
+}
+nav>ul li a{
+    color: #fff;
+    font-size: .8em;
+}
+nav#main-nav_bar ul li{
+    display: inline-block;
+    margin: 0.8em;
+}
+ header{
+    position: fixed;
+    top: 0;
+    z-index: 100;
+/*    opacity: 0.4;*/
+}
+header,footer{
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    background:#1C222D;
+}
+.vert-margin-2{
+    margin-bottom: 2rem;
+}
+
+.h-margin-2{
+    margin: 0 2em;
+}
+.h-r_margin-2{
+    margin-right: 2em;
+}
+.vert-marginTop-2{
+     margin-top: 2em;
+}
+.vert-marginTop-4{
+    margin-top: 4em;
+}
+.h-margin-1{
+    margin: 1.5em;
+}
+.vert-pad-2{
+    padding: 2em 0 0 0;
+}
+.vert-pad-1{
+    padding: 1em 0;
+}
+.t-b_pad{
+    padding-top: .5em;
+    padding-bottom: .5em;
+
+}
+.pad-2{
+    padding: 1em 4em;
+}
+.h-pad-1{
+    padding: 0 1em;
+}
+.text_c-orange{
+    color: rgb(240, 141, 11);
+}
+.text_c-red{
+    color: rgb(230, 36, 36);
+}
+.text_c-light_gr{
+    color: #f1f1f1;
+}
+.text_c-white{
+    color: #fff;
+}
+.text_c-green{
+    color: #38B39E;
+}
+.text_c-blue{
+    color: #232f3e;
+}
+.text_sm5{
+    font-size: .5em;
+}
+.text_7{
+    font-weight: 700;
+}
+.text_s75{
+    font-size: 0.9em;
+
+}
+.bg-light-gr{
+    background: #f1f1f1;
+}
+section#img-banner{
+    background: #232f3e url("charity-children-desert-36785.jpg") no-repeat;
+    background-position:top;
+    background-size: cover;
+    position: relative;
+    top: 0;
+    left: 0;
+    min-height:100vh;
+}
+article>ul{
+    display: block;
+    margin-left: 16em
+    
+    
+}
+ul li{
+    display: inline-block;
+    margin: 0 1em 1em 1em;
+}
+ input[type="email"],button[type="submit"]{
+    padding: 1em;
+    background: #f1f1f1;
+    margin: 0;
+}
+input[type="email"]{
+    width: 35%;
+}
+button[type="submit"]{
+    background:#80a1b6;
+    color: #fff;
+}
+.gallery{
+    height: 300px;
+    position: relative;
+    display: block;
+    width: 100%;
+            
+}
+.img-popup {
+   cursor: zoom-in;
+}
+.img{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+ul.social li{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #aaa;
+    text-align: center;
+    vertical-align:baseline;
+    align-content: center;
+    padding: 0.5em;
+}
+.mouse {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -6em;
+    z-index: 99;
+}
+.mouse-icon {
+    width: 60px;
+    height: 60px;
+    border: 1px solid rgba(255,255,255,0);
+    border-radius: 50%;
+    background: rgba(255,255,255,0.4);
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+} 
+.mouse-wheel {
+    height: 30px;
+    margin: 2px auto 0;
+    display: block;
+    width: 30px;
+    background: transparent;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 20px;
+}
+ .fab,.fa{
+    color: #fff;
+ }
+.max_width{
+    max-width: 720px;
+}
